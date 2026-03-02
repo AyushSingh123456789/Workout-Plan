@@ -26,7 +26,7 @@ class Days {
         int CurrentIteration = 0;
 
         while (sets < 4) {
-            System.out.println("Start the Sets");
+            System.out.println("Start the Current Set");
             System.out.println("Press Y if the Set is done: ");
             String setConfirmation;
             Scanner s3 = new Scanner(System.in);
@@ -41,7 +41,7 @@ class Days {
             if (setConfirmation.matches("[Yy]+")) {
                 sets++;
                 continue;
-            } else if (setConfirmation.matches("[nN]") && CurrentIteration == 3) {
+            } else if (setConfirmation.matches("[nN]") && CurrentIteration == 2) {
                 System.out.println("Okay, I will take 3 Sets for Today");
                 break;
             }
@@ -55,7 +55,32 @@ class Days {
     }
 
     void DumbbellPresses() {
+        int sets = 0;
+        int CurrentIteration = 0;
 
+        while (sets < 4) {
+            System.out.println("Start the Current Set");
+            System.out.println("Press Y if the Set is done: ");
+            String setConfirmation;
+            Scanner s4 = new Scanner(System.in);
+            setConfirmation = s4.nextLine();
+
+            for (int i = 0; i < 4; i++) {
+                CurrentIteration = i;
+            }
+
+            if (setConfirmation.matches("[Yy]+")) {
+                sets++;
+                continue;
+            } else if (setConfirmation.matches("[nN]+") && CurrentIteration == 2) {
+                System.out.println("Okay, I'll take 3 sets for today");
+                break;
+            } else {
+                System.out.println("Wrong Input, Exiting the System");
+                System.exit(0);
+            }
+        }
+        System.out.println("Well Done, The 2nd Exercise is Done, \nMoving to the Next One ");
     }
 
 }
