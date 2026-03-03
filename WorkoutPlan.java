@@ -91,15 +91,18 @@ class StartScreen {
     System.out.println("1. Monday, \n2. Tuesday, \n3. Wednesday, \n4. Thursday, \n5. Friday, \n6. Saturday");
 
     int choice1;
-    Scanner s1 = new Scanner(System.in);choice1=s1.nextInt();
+    Scanner s1 = new Scanner(System.in);
+    choice1 = s1.nextInt();
 
-    if(choice1==1){Days m1=new Days();}
+    if(choice1==1){Days m1=new Days();
+        m1.Monday();
+    }
 
 }
 
 public class WorkoutPlan {
     public static void main(String[] args) {
-
+        StartScreen d = new StartScreen();
     }
 
 }
