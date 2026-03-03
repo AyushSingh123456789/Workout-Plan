@@ -15,6 +15,9 @@ class Days {
             Days d1 = new Days();
             d1.WarmupPushups();
             d1.DumbbellPresses();
+            d1.DumbbellFlies();
+            d1.DumbbellPullovers();
+            d1.DumbbellDeclineFlies();
         } else {
             System.out.println("Wrong Input, Exiting the System");
             System.exit(0);
@@ -82,6 +85,124 @@ class Days {
         }
         System.out.println("Well Done, The 2nd Exercise is Done, \nMoving to the Next One ");
     }
+
+    void DumbbellFlies(){
+        int sets = 0;
+        int CurrentIteration = 0;
+
+        while (sets < 4) {
+            System.out.println("Start the Current Set");
+            System.out.println("Press Y if the Set is done: ");
+            String setConfirmation;
+            Scanner s4 = new Scanner(System.in);
+            setConfirmation = s4.nextLine();
+
+            for (int i = 0; i < 4; i++) {
+                CurrentIteration = i;
+            }
+
+            if (setConfirmation.matches("[Yy]+")) {
+                sets++;
+                continue;
+            } else if (setConfirmation.matches("[nN]+") && CurrentIteration == 2) {
+                System.out.println("Okay, I'll take 3 sets for today");
+                break;
+            } else {
+                System.out.println("Wrong Input, Exiting the System");
+                System.exit(0);
+            }
+        }
+        System.out.println("Well Done, The 3rd Exercise is Done, \nMoving to the Next One ");
+    }
+
+    void DumbbellPullovers(){
+        int sets = 0;
+        int CurrentIteration = 0;
+
+        while (sets < 4) {
+            System.out.println("Start the Current Set");
+            System.out.println("Press Y if the Set is done: ");
+            String setConfirmation;
+            Scanner s4 = new Scanner(System.in);
+            setConfirmation = s4.nextLine();
+
+            for (int i = 0; i < 4; i++) {
+                CurrentIteration = i;
+            }
+
+            if (setConfirmation.matches("[Yy]+")) {
+                sets++;
+                continue;
+            } else if (setConfirmation.matches("[nN]+") && CurrentIteration == 2) {
+                System.out.println("Okay, I'll take 3 sets for today");
+                break;
+            } else {
+                System.out.println("Wrong Input, Exiting the System");
+                System.exit(0);
+            }
+        }
+        System.out.println("Well Done, The 4th Exercise is Done, \nMoving to the Next One ");
+    }
+
+    void DumbbellDeclineFlies(){
+        int sets = 0;
+        int CurrentIteration = 0;
+
+        while (sets < 4) {
+            System.out.println("Start the Current Set");
+            System.out.println("Press Y if the Set is done: ");
+            String setConfirmation;
+            Scanner s4 = new Scanner(System.in);
+            setConfirmation = s4.nextLine();
+
+            for (int i = 0; i < 4; i++) {
+                CurrentIteration = i;
+            }
+
+            if (setConfirmation.matches("[Yy]+")) {
+                sets++;
+                continue;
+            } else if (setConfirmation.matches("[nN]+") && CurrentIteration == 2) {
+                System.out.println("Okay, I'll take 3 sets for today");
+                break;
+            } else {
+                System.out.println("Wrong Input, Exiting the System");
+                System.exit(0);
+            }
+        }
+        System.out.println("Well Done, The 5th Exercise is Done, \nMoving to the Next One ");
+    }
+
+    void DumbbellCalfRaises(){
+        int sets = 0;
+        int CurrentIteration = 0;
+
+        while (sets < 4) {
+            System.out.println("Start the Current Set");
+            System.out.println("Press Y if the Set is done: ");
+            String setConfirmation;
+            Scanner s4 = new Scanner(System.in);
+            setConfirmation = s4.nextLine();
+
+            for (int i = 0; i < 4; i++) {
+                CurrentIteration = i;
+            }
+
+            if (setConfirmation.matches("[Yy]+")) {
+                sets++;
+                continue;
+            } else if (setConfirmation.matches("[nN]+") && CurrentIteration == 2) {
+                System.out.println("Okay, I'll take 3 sets for today");
+                break;
+            } else {
+                System.out.println("Wrong Input, Exiting the System");
+                System.exit(0);
+            }
+        }
+        System.out.println("Well Done, The 6th Exercise is Done, \nMoving to the Next One ");
+    }
+
+
 
 }
 
