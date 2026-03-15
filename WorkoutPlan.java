@@ -1079,5 +1079,11 @@ public class WorkoutPlan {
          * .matches("[]") when comparing characters, symbols, numbers, bunch of
          * characters on an Individual level too.
          */
+
+        /*
+         * Future Changes to work on-:
+         * 1. Use more methods to reduce the code duplications.
+         * 2. Take care of the Scanner leaks.
+         */
     }
 }
